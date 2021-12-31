@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+
+}
+
+html,body{
+    height: 100%;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+header{
+    padding: 10px 5% 35px 5%;
+    height: 100px;
+}
+
+header .logo{
+    float: left;
+}
+
+header nav.desktop{
+    position: relative;
+    top: 20px;
+    float: right;
+}
+
+nav.mobile{
+    margin-top: 25px;
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url('../images/menu-mobile.png');
+    display: none;
+}
+
+
+nav.mobile ul{
+    display: none;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    text-align: center;
+    background-color: white;
+
+}
+
+nav.mobile li{
+    font-size: 23px;
+    padding: 20px 0;
+    font-style: italic;
+    border-bottom: 1px solid #eb2d2d;
+}
+
+
+nav.mobile li a{
+    color: black;
+    text-decoration: none;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+header nav.desktop ul li{
+    float: left;
+    font-size: 23px;
+    padding: 0 25px;
+    font-style: italic;
+}
+
+header nav.desktop ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+section.banner{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background-image: url('../images/bg.jpg');
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+}
+
+.text-banner{
+    padding: 100px;
+    font-style: italic;
+
+}
+
+.text-banner-single{
+    width: 314px;
+    height: 60px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    color: white;
+    font-size: 28px;
+    background-image: url('../images/box-text.png');
+    background-size: 100% 100%;
+
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+    width: 220px;
+    position: relative;
+    left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+    width: 140px;
+    position: relative;
+    left: -18px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+    width: 350px;
+    height: 50px;
+    font-size: 23px;
+    background-image: url('../images/box-white-text.png');
+    color: black;
+    position: relative;
+    left: -30px;
+    padding: 8px 30px;
+}
+
+
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+
+section.veiculos-destaque .container{
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+
+
+.line-titulo{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+}
+
+
+ .line-titulo h2{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    padding: 0 20px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.ln1{
+    position: absolute;
+    height: 2px;
+    top: 20px;
+    width: 100%;
+    background-color: black ;
+}
+
+
+.vitrine-destaque{
+    float: left;
+    width: 33.3%;
+}
+
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding-top: 100%;
+    border: 8px solid white;
+    background-size: 100% 100%;
+}
+
+.vitrine-destaque h2{
+    padding-left: 8px;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.vitrine-destaque p{
+    padding-left: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 8px;
+
+}
+
+.btn1{
+    line-height: 35px;
+    display: block;
+    background-color: #eb2d2d;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 4px solid #b21e1e;
+    color: white;
+    width: 150px;
+}
+
+.vitrine-destaque a{
+   margin-left: 8px;
+   margin-top: 10px;
+   font-style: italic;
+   
+   
+ 
+
+}
+
+.servicos-descricao{
+    display: flex;
+}
+
+.half1{
+    width: 50%;
+    padding: 90px 0;
+    text-align: right;
+    background-color: #242424;
+    color: white;
+}
+
+
+.half1-wraper{
+    padding-right: 100px;
+    text-align: left;
+    display: inline-block;
+    
+}
+
+
+.half1 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half1-wraper ul{
+   display: inline-block;
+    margin-top: 20px;
+}
+
+
+.half1-wraper li{
+   margin-left: 15px ;
+}
+
+
+.half1-wraper a{
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+
+
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #eb2d2d;
+    color: white;
+
+}
+
+.half2 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+
+.half2 .depoimento-single{
+    margin-top: 20px;
+}
+
+
+.half2 .depoimento-single p{
+    font-size: 20px;
+
+}
+
+
+.navigation{
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation img{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.nome-depoimento{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
+section.contato{
+    padding: 80px 2% 0 2%;
+}
+
+
+section.contato form{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+section.contato .input-wraper{
+    float: left;
+    padding: 10px;
+
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 50px;
+    font-size: 16px;
+
+    line-height: 5px;
+    padding-left: 15px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+section.contato textarea{
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+section.contato form .input-wraper:nth-of-type(5){
+    text-align: center;
+}
+
+section.contato input[type=submit]{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    padding: 0 20px;
+    float: left;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-style: italic;
+}
+
+footer p {
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+}
+
+/*pagina de vendas*/
+
+
+section.venda{
+    padding: 90px 0;
+   min-height: 90%;
+}
+
+
+.content-venda{
+    margin-top: 40px;
+}
+
+.sidebar{
+	float: left;
+	width: 30%;
+}
+
+.search1{
+	width:90%;
+}
+
+.search1 h2{
+	font-size: 24px;
+	color: black;
+	font-weight: normal;
+}
+
+.search1 .barra-preco{
+	width: 100%;
+	height: 20px;
+	background: white;
+	border:1px solid #ccc;
+	margin-top:8px;
+	border-radius: 20px;
+	position: relative;
+}
+
+.barra-preco-fill{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30%;
+	height: 20px;
+	border-radius: 20px;
+	background:linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+}
+
+.pointer-barra{
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	left: calc(30% - 13px);
+	top: -3px;
+	cursor: pointer;
+	border-radius: 50%;
+	background:linear-gradient(to bottom,rgb(255,255,255),rgb(150,150,150));
+	border:1px solid  #ccc;
+}
+
+.valor-pesquisa{
+	margin-top:8px;
+}
+
+.valor-pesquisa p{
+	color: black;
+	font-size: 15px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+	float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+	float: right;
+}
+
+.search2{
+	margin-top:40px;
+}
+
+.search2 h2{
+	font-size: 24px;
+	color: black;
+	font-weight: normal;
+}
+
+.form-venda-wraper{
+	margin-top:10px;
+}
+
+.form-venda-wraper input[type=checkbox]{
+	display: none;
+}
+
+.form-venda-wraper label{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	vertical-align: top;
+	cursor: pointer;
+	position: relative;
+}
+
+
+.circle{
+	width: 8px;
+	height: 8px;
+	display: none;
+	border-radius: 4px;
+	background: rgb(110,110,110);
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+	display: block;
+}
+
+.form-venda-wraper span{
+	padding:0 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.vitrine-venda{
+    overflow: hidden;
+	float: left;
+	width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque{
+	margin-top:20px;
+}
+
+
+/*pagina do veiculo*/
+
+section.venda-single .container{
+    padding: 40px 0;
+    max-width: 1000px;
+}
+
+section.venda-single{
+
+    padding: 0px 2%;
+}
+
+.info-veiculo{
+    margin-top: 40px;
+    display: inline-block;
+    width: 60%;
+}
+
+.descricao-veiculo{
+  vertical-align: top;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+
+}
+
+.descricao-veiculo p{
+    font-size: 17px;
+    margin-top: 20px;
+    max-width: 250px;
+}
+
+.descricao-veiculo a{
+    margin-top: 20px;
+}
+
+
+.nav-galeria-parent{
+        width: 100%;
+        padding: 36px;
+        position: relative;
+
+}
+
+.arrow-left-nav{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    background-image: url('../images/arrow-left.png');
+    background-size: 100% 100%;
+    width: 25px;
+    cursor: pointer;
+    height: 25px;
+
+}
+
+
+.arrow-right-nav{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    background-image: url('../images/arrow-right.png');
+    background-size: 100% 100%;
+    width: 25px;
+    cursor: pointer;
+    height: 25px;
+
+}
+
+.nav-galeria{
+    overflow: hidden;
+    width: 100%;
+ 
+
+}
+
+.nav-galeria-wraper{
+    width: 200%;
+    
+}
+
+.mini-img-wraper{
+    float: left;
+    padding: 9px;
+    width: calc(33.3% * (100 / 200)) ;
+}
+
+.mini-img{
+    width: 100%;
+    padding-top: 70%;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+/*pagina NOVA sobre*/
+
+section.sobre{
+    padding: 60px 2% 20px 2%;
+    min-height: 90%;
+}
+
+section.sobre .container{
+    max-width: 840px;
+    margin-top: 30px;
+}
+
+section.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top:60% ;
+    background-color: rgb(220, 220, 220);
+}
+
+
+section.sobre .descricao-autor{
+    margin-top: 20px;
+}
+
+
+.descricao-autor h2{
+    font-size: 24px;
+
+}
+
+.descricao-autor p{
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+.descricao-autor2{
+    margin-top: 20px;
+}
+
+.img-small{
+    width: 20%;
+    padding-top: 20%;
+    float: left;
+    background-color: rgb(220,220,220);
+}
+
+.descricao-autor2 p{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    line-height: 25px;
+}
+
+
+
+
+/*codigo do responsivel*/
+
+
+
+@media screen and (max-width: 1400px){
+    section.banner{
+      background-size: 90% auto;
+      background-position: 200% 100%;
+
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .half1{
+        text-align: center;
+
+    }
+
+    .half1-wraper{
+        text-align: left;
+        padding-right: 0;
+
+    }
+
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    section.banner{
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      min-height: 500px;
+      
+    }
+}
+
+
+
+@media screen and (max-width: 850px){
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    footer nav {
+        display: none;
+
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
+    }
+
+    .w50{
+        width: 100%;
+    }
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1{
+        text-align: center;
+        
+    }
+    
+    .half1-wraper{
+        padding-right: 0;
+    }
+
+    .half1,.half2{
+        padding: 80px 5%;
+        width: 100%;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        display: inline-block;
+        text-align: left;
+    }
+    
+
+    .vitrine-venda{
+        text-align: center;
+        width: 100%;
+    }
+
+    .info-veiculo{
+        width: 100%;
+    }
+
+    .descricao-veiculo{
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .descricao-veiculo p{
+        max-width: none;
+    }
+
+    .descricao-veiculo a {
+        display: inline-block;
+    }
+
+
+}
+
+@media screen and (max-width: 580px){
+    .text-banner{
+        padding: 30px;
+    
+    }
+    
+    .text-banner-single{
+        width: 314px;
+        height: 60px;
+        margin-top: 20px;
+        padding: 12px 30px;
+        color: white;
+        font-size: 23px;
+        background-image: url('../images/box-text.png');
+        background-size: 100% 100%;
+    
+    }
+    
+    .text-banner .text-banner-single:nth-of-type(2){
+        width: 220px;
+        position: relative;
+        left: -10px;
+    }
+    
+    .text-banner .text-banner-single:nth-of-type(3){
+        width: 140px;
+        position: relative;
+        left: -18px;
+    }
+
+    section.veiculos-destaque .line-titulo h2{
+        font-size: 23px;
+    }
+
+
+    section.veiculos-destaque .container{
+   
+        text-align: center;
+    }
+
+    .vitrine-destaque{
+        float: none;
+        display: inline-block;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+
+
+
+    .vitrine-destaque a{
+        display: inline-block;
+    }
+
+    .img-small{
+        float: none;
+        width: 100%;
+        padding-top: 80%;
+    }
+
+    .descricao-autor2 p{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+    .vitrine-destaque{
+        width: 100%;
+    }
+}
